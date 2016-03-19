@@ -12,9 +12,10 @@ body{
 }
 
 .article-title {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2.5em;
-    margin-bottom: 0.8em;
+   //margin-bottom: 0.8em;
+   margin-bottom: 10px;
     
 }
 .article-title small {
@@ -25,10 +26,18 @@ body{
 
 .article-body {
     font-size: 1.5em;
+    margin-left:20px;
+}
+
+.article-body-preview {
+    font-size: 1.5em;
+    margin-left:20px;
+    font-style: italic;
 }
 
 #new-article-btn {
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #article-date {
@@ -76,4 +85,8 @@ body{
     padding-top: 15px;
     padding-left: 15px;
     font-style: italic;
+}
+
+.action-links {
+    margin-top: 20px;
 }
