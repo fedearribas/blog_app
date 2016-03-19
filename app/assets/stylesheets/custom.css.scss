@@ -15,7 +15,13 @@ body{
     font-weight: bold;
     font-size: 2.5em;
     margin-bottom: 0.8em;
+    
 }
+.article-title small {
+    font-weight: normal;
+    font-size: small;
+    }
+
 
 .article-body {
     font-size: 1.5em;
@@ -64,4 +70,10 @@ body{
     border-color: #D6E9C6;
     color: #468847;
     text-align: left;
+}
+
+.author {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-style: italic;
 }
