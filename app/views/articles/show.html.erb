@@ -1,9 +1,13 @@
+<div class="jumbotron">
 <article class="detail-article">
   <h1 class="article-detail-title">
     <%= @article.title %>
   </h1>
     <div class="glyphicon glyphicon-calendar" id="article-date">
-    <%= @article.created_at.strftime("%b %d, %Y") <<", " << @article.user.email %>
+    <%= @article.created_at.strftime("%b %d, %Y") %>
+    <% if @article.user %>
+    , <%= @article.user.email %>
+   <% end %>
   </div>
   
   <div class="article-body">
@@ -17,3 +21,5 @@
                 class: 'btn btn-danger'%>
   </div>
 </article>
+
+</div>
