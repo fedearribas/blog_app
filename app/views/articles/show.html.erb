@@ -14,12 +14,14 @@
     <%= @article.body %>
   </div>
   
-  <div class="action-links">
-    <%= link_to "Edit Article", edit_article_path(@article), class: 'btn btn-primary' %>
-    <%= link_to "Delete Article", article_path(@article), method: :delete,
-                data: {confirm: "Are you sure yo want to delete the article?"},
-                class: 'btn btn-danger'%>
-  </div>
+  <% if user_signed_in? && current_user == @article.user %>
+    <div class="action-links">
+      <%= link_to "Edit Article", edit_article_path(@article), class: 'btn btn-primary' %>
+      <%= link_to "Delete Article", article_path(@article), method: :delete,
+                  data: {confirm: "Are you sure yo want to delete the article?"},
+                  class: 'btn btn-danger'%>
+    </div>
+  <% end %>
 </article>
 
 </div>
