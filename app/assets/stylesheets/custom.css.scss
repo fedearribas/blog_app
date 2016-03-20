@@ -3,6 +3,7 @@
 
 body{
     padding-top: 70px;
+    padding-bottom: 70px;
     //background: #EFEFEF;
     background: #FFFFFF;
     background: #FCFCFC;
@@ -99,4 +100,13 @@ body{
 
 .action-links {
     margin-top: 20px;
+}
+
+.comment-body{
+    font-size: x-large;
+}
+
+.comment-time {
+    font-style: italic;
+    font-size: large;
 }
